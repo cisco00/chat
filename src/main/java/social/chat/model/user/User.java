@@ -1,11 +1,18 @@
 package social.chat.model.user;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import net.minidev.json.annotate.JsonIgnore;
 import social.chat.model.post.Post;
 
 import javax.persistence.*;
 import java.sql.Date;
 import java.util.List;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 
 @Entity
 public class User {
@@ -58,6 +65,9 @@ public class User {
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Friend> friends;
+
+    @OneToMany
+    private List<Comment> comments;
 
 
 

@@ -1,9 +1,14 @@
 package social.chat.model.user;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Entity
 public class Friend {
