@@ -1,8 +1,9 @@
-package social.chat.model.user;
+package social.chat.model.post;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import social.chat.model.user.User;
 
 import javax.persistence.*;
 
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Comment {
+public class Image {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,5 +20,5 @@ public class Comment {
     @ManyToOne
     private User user;
 
-    private String comment;
+    private String imageUrl;
 }

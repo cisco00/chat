@@ -4,5 +4,10 @@
       "name": "spring.datasource-driver-class-name",
       "type": "java.lang.String",
       "description": "Description for spring.datasource-driver-class-name."
-  }
-] }
+    },
+    {
+      "name": "auth0.apiAudience",
+      "type": "java.lang.String",
+      "description": "Description for auth0.apiAudience."
+    }
+  ] }

@@ -1,9 +1,9 @@
-DROP USER IF EXISTS 'francisuser'@'localhost';
-CREATE USER 'francisuser'@'localhost' IDENTIFIED BY 'francisuser123';
-GRANT ALL PRIVILEGES ON petstore_db.* TO 'francisuser'@'localhost';
+DROP USER IF EXISTS 'root'@'localhost';
+CREATE USER 'root'@'localhost' IDENTIFIED BY 'root';
+GRANT ALL PRIVILEGES ON root.* TO 'root'@'localhost';
 FLUSH PRIVILEGES ;
 
-DROP DATABASE IF EXISTS petstore_db;
-CREATE DATABASE petstore_db;
+DROP DATABASE IF EXISTS chat_db;
+CREATE DATABASE chat_db;
 
 -- // security, mariadb, rest,

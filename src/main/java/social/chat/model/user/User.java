@@ -4,7 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import net.minidev.json.annotate.JsonIgnore;
+import social.chat.model.post.Comment;
+import social.chat.model.post.Image;
 import social.chat.model.post.Post;
+import social.chat.model.post.Video;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -68,7 +71,5 @@ public class User {
 
     @OneToMany
     private List<Comment> comments;
-
-
 
 }
